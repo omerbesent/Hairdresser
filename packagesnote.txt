@@ -1,0 +1,3 @@
+-------- Sabit değerlerin tutulması için Configuration -----------------
+npm i react-native-config
+react-native link react-native-config

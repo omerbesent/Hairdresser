@@ -12,6 +12,9 @@ target 'Hairdresser' do
     :hermes_enabled => false
   )
 
+
+  pod 'react-native-config', :path => '../node_modules/react-native-config'
+
   target 'HairdresserTests' do
     inherit! :complete
     # Pods for testing
