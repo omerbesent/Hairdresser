@@ -1,3 +1,11 @@
 -------- Sabit değerlerin tutulması için Configuration -----------------
 npm i react-native-config
 react-native link react-native-config
+
+-------- Redux ----------------
+npm i redux
+npm i react-redux
+npm i redux-thunk
+
+-------- Web servis bağlantıları çin -----------
+npm i axios
