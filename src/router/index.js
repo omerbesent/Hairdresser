@@ -3,8 +3,8 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator, CardStyleInterpolators } from '@react-navigation/stack';
 
 // import Home from '../Screens/Home';
-import Login from '../screens/Login';
-import Register from '../screens/Register';
+import Login from '../Screens/Login';
+import Register from '../Screens/Register';
 
 const Stack = createStackNavigator();
 
