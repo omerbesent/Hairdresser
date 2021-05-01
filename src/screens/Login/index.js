@@ -1,15 +1,20 @@
 import React, { Component } from 'react'
-import { SafeAreaView, Text, TouchableOpacity } from 'react-native'
+import { SafeAreaView, Text, View ,TouchableOpacity} from 'react-native' 
 
-export class Register extends Component {
+export default class Login extends Component {
     render() {
         return (
-            <SafeAreaView>
-                <Text>Register</Text>
-                <TouchableOpacity>Logine dön</TouchableOpacity>
-            </SafeAreaView>
+            <View>
+                <Text>Login</Text>
+                <TouchableOpacity onPress={() => this.props.navigation.navigate('Register')}
+                    style={{ padding: 20, borderWidth: 1, borderRadius: 10, marginTop: 20 }}>
+                    <Text>Register</Text>
+                </TouchableOpacity>
+            </View>
         )
     }
 }
+
+
 
 
