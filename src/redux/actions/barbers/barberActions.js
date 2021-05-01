@@ -1,5 +1,8 @@
 import { GET_BARBERS_SUCCESS } from '../actionTypes';
 import axios from 'axios';
+import Config from "react-native-config";
+
+const API_URL = Config.API_URL;
 
 export function getBarbersSuccess(barberList) {
     return {
@@ -11,8 +14,8 @@ export function getBarbersSuccess(barberList) {
 export function getBarbers() {
     return async (dispatch) => {
         try {
-            const apiReq = await axios.get('http://api.omerbesent.com.tr/api/barbers/getall')
-                .then(res => res.data); 
+            const apiReq = await axios.get(API_URL + 'barbers/getall')
+                .then(res => res.data);
             await dispatch(getBarbersSuccess(apiReq));
             return apiReq;
         } catch (error) {

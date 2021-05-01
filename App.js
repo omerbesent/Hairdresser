@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { SafeAreaView, Text } from 'react-native';
-import Config from "react-native-config";
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import * as barberActions from './src/redux/actions/barbers/barberActions';
@@ -12,13 +11,17 @@ import * as registerActions from './src/redux/actions/auth/registerActions';
 class App extends Component {
 
   componentDidMount() {
-
-    console.log(Config.API_URL);
-    console.log(Config.GOOGLE_MAPS_API_KEY);
-
     let { actions } = this.props;
 
-    actions.getLogin("omer@omer.co", "12345")
+    // actions.getLogin("omer@omer.co", "12345")
+    //   .then(res => {
+    //     console.log(res);
+    //   })
+    //   .catch(err => {
+    //     console.log(err)
+    //   })
+
+    actions.getBarbers()
       .then(res => {
         console.log(res);
       })

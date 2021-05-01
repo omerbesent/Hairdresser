@@ -1,5 +1,8 @@
 import { GET_REGISTER_SUCCESS } from '../actionTypes';
 import axios from 'axios';
+import Config from "react-native-config";
+
+const API_URL = Config.API_URL;
 
 export function getRegisterSuccess(register1) {
     return {
@@ -11,7 +14,7 @@ export function getRegisterSuccess(register1) {
 export function getRegister(email, password, firstName, lastName, phoneNumber) {
     return async (dispatch) => {
         try {
-            const apiReq = await axios.post('http://api.omerbesent.com.tr/api/auth/register',
+            const apiReq = await axios.post(API_URL+'auth/register',
                 {
                     email: email,
                     password: password,
