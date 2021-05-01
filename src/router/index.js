@@ -18,7 +18,7 @@ function MyStack() {
                     cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS,
                     headerShown: false
                 }}
-                // headerMode='float'
+                 headerMode='screen'
             >
                 {/* <Stack.Screen name="Login" component={Login} options={{headerShown: false}} /> */}
                 <Stack.Screen name="Login" component={Login}  />

@@ -6,7 +6,7 @@ import * as barberActions from './src/redux/actions/barbers/barberActions';
 import * as loginActions from './src/redux/actions/auth/loginActions';
 import * as registerActions from './src/redux/actions/auth/registerActions';
 
-import Router from './src/router'
+import Router from './src/Router'
 
 export default class App extends Component {
 
