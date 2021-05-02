@@ -6,6 +6,7 @@ react-native link react-native-config
 npm i redux
 npm i react-redux
 npm i redux-thunk
+npm i redux-form
 
 -------- Web servis bağlantıları çin -----------
 npm i axios
@@ -15,3 +16,6 @@ npm install @react-navigation/native
 npm install react-native-reanimated react-native-gesture-handler react-native-screens react-native-safe-area-context @react-native-community/masked-view
 npm install @react-navigation/stack
 
+-------- Icon setleri için ------------------
+npm i react-native-vector-icons
+react-native link react-native-vector-icons

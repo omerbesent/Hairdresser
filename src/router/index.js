@@ -5,6 +5,8 @@ import { createStackNavigator, CardStyleInterpolators } from '@react-navigation/
 // import Home from '../Screens/Home';
 import Login from '../Screens/Login';
 import Register from '../Screens/Register';
+import Home from '../Screens/Home';
+import LoginForm from '../Components/LoginForm';
 
 const Stack = createStackNavigator();
 
@@ -18,11 +20,12 @@ function MyStack() {
                     cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS,
                     headerShown: false
                 }}
-                 headerMode='screen'
+                headerMode='screen'
             >
                 {/* <Stack.Screen name="Login" component={Login} options={{headerShown: false}} /> */}
-                <Stack.Screen name="Login" component={Login}  />
-                <Stack.Screen name="Register" component={Register}   /> 
+                <Stack.Screen name="Login" component={Login} />
+                <Stack.Screen name="Register" component={Register} />
+                <Stack.Screen name="Home" component={Home} />
             </Stack.Navigator>
         </NavigationContainer >
     );

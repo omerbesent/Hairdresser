@@ -12,11 +12,11 @@ import configureStore from './src/redux/reducers/configureStore';
 
 const store = configureStore()
 
-// const RNRedux = () => (
-//     <Provider store={store}>
-//         <App />
-//     </Provider>
-// )
+const RNRedux = () => (
+    <Provider store={store}>
+        <App />
+    </Provider>
+)
 
-// AppRegistry.registerComponent(appName, () => RNRedux);
-AppRegistry.registerComponent(appName, () => App);
+AppRegistry.registerComponent(appName, () => RNRedux);
+// AppRegistry.registerComponent(appName, () => App);
