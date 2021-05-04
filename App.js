@@ -8,6 +8,8 @@ import * as registerActions from './src/redux/actions/auth/registerActions';
 
 import Router from './src/Router'
 
+import FlashMessage from "react-native-flash-message";
+
 export default class App extends Component {
 
   // componentDidMount() {
@@ -40,7 +42,8 @@ export default class App extends Component {
   // }
 
   render() {
-    return <Router></Router>
+    return <Router>
+    </Router>
   }
 };
 

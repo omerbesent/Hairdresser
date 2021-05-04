@@ -9,6 +9,7 @@ import { bindActionCreators } from 'redux';
 import * as loginActions from '../../redux/actions/auth/loginActions';
 
 import { useNavigation } from '@react-navigation/native';
+import { errorMessage } from '../CustomMessage/index';
 
 const renderEmailInput = ({ input: { onChange, input }, meta: { touched, error }, ...rest },) => {
 
@@ -37,13 +38,13 @@ const LoginForm = (props) => {
                     if (res.data.success)
                         navigation.navigate('Home');
                     else
-                        alert(res.data.message)
+                        errorMessage('Giriş işlemi', res.data.message);
                 } else {
-                    alert(res.data);
+                    errorMessage('Giriş işlemi', res.data);
                 }
             })
             .catch(err => {
-                alert(err)
+                errorMessage('Giriş işlemi', err);
             })
     };
 

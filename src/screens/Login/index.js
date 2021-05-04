@@ -6,6 +6,7 @@ import {
     ScrollView,
     TouchableOpacity
 } from 'react-native';
+import FlashMessage from 'react-native-flash-message';
 import Icon from 'react-native-vector-icons/FontAwesome5';
 import LoginForm from '../../Components/LoginForm';
 
@@ -35,6 +36,8 @@ export default class Login extends Component {
 
 
             </View>
+            
+            <FlashMessage position="top" duration={4000} />
         </ScrollView>
     }
 }

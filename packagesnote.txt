@@ -19,3 +19,6 @@ npm install @react-navigation/stack
 -------- Icon setleri için ------------------
 npm i react-native-vector-icons
 react-native link react-native-vector-icons
+
+-------- Toast message için -----------------
+npm i react-native-flash-message

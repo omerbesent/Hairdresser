@@ -30,12 +30,12 @@ export default class PasswordInput extends Component {
         );
     }
 }
- 
+
 const styles = StyleSheet.create({
     email_input: {
         width: 280,
         borderWidth: 1,
-        borderRadius: 10,
+        borderRadius: 7,
         padding: 8,
         paddingLeft: 35,
         borderColor: 'gray',
