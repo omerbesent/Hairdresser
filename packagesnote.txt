@@ -22,3 +22,9 @@ react-native link react-native-vector-icons
 
 -------- Toast message için -----------------
 npm i react-native-flash-message
+
+-------- Google Map işlemleri için ------------
+npm i react-native-maps
+
+-------- Google Map markerlerını uzaktan toplu göstermek için ---------------------
+npm i react-native-map-clustering
