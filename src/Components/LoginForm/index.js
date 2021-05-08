@@ -21,7 +21,7 @@ const renderEmailInput = ({ input: { onChange, input }, meta: { touched, error }
 
 const renderPasswordInput = ({ input: { onChange, input }, meta: { touched, error }, ...rest }) => {
     return <View>
-        <PasswordInput onChange={onChange} {...input} {...rest} />
+        <PasswordInput onChange={onChange} {...input} {...rest}  />
         {touched && (error && <Text style={styles.error}>{error}</Text>)}
     </View>
 };
@@ -51,7 +51,7 @@ const LoginForm = (props) => {
     return (
         <View>
             <View style={{ paddingBottom: 20 }}>
-                <Field
+                <Field 
                     name={'email'}
                     component={renderEmailInput}
                 />
